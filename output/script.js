@@ -5,5 +5,6 @@ let array = [];
 let arayStringorNumber = [];
 // let object: object;
 let object;
-array.push('raihan');
-arayStringorNumber.push('f');
+let anyType;
+let anyTypeOfArray;
+let anyTypeOfObject;

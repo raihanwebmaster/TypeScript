@@ -12,9 +12,13 @@ let object: {
     adult: boolean
 };
 
+let anyType: any;
 
+let anyTypeOfArray: any[];
 
-array.push('raihan')
-arayStringorNumber.push('f')
+let anyTypeOfObject: {
+    name: any,
+    age:any,
+}
 
 
