@@ -31,3 +31,18 @@ const userDetails = (id, user) => {
 const sayHello = (user) => {
     console.log(`Hello ${user.age > 50 ? "Sir" : "Mir"} ${user.name}`);
 };
+// Function Signatures 
+let signatures;
+let add;
+add = (a, b) => {
+    return a + b;
+};
+let calculation;
+calculation = (a, b, c) => {
+    if (c === 'add') {
+        return a + b;
+    }
+    else {
+        return a - b;
+    }
+};
