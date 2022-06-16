@@ -1,3 +1,9 @@
 "use strict";
-const country = 'Bangladesh';
-console.log(country);
+let a;
+let b;
+let array = [];
+let arayStringorNumber = [];
+// let object: object;
+let object;
+array.push('raihan');
+arayStringorNumber.push('f');
