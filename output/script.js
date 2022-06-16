@@ -1,4 +1,3 @@
-"use strict";
 let a;
 let b;
 let array = [];
@@ -82,3 +81,4 @@ class Cricket {
 const Topmashrafi = new Cricket("Mashrafi", 40, "bangladesh");
 const cricket = [];
 cricket.push(Topmashrafi);
+export {};

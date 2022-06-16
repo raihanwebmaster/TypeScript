@@ -121,3 +121,6 @@ const Topmashrafi = new Cricket("Mashrafi", 40, "bangladesh");
 const cricket: Cricket[] = [];
 
 cricket.push(Topmashrafi);
+
+//Module System
+import {Player} from './classes/Player.js'
