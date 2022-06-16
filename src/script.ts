@@ -3,13 +3,13 @@ let a: string;
 let b: number;
 
 let array: string[] = [];
-let arayStringorNumber: (string | number)[] = []
+let arayStringorNumber: (string | number)[] = [];
 
 // let object: object;
 let object: {
-    name: string,
-    age: number,
-    adult: boolean
+  name: string;
+  age: number;
+  adult: boolean;
 };
 
 let anyType: any;
@@ -17,25 +17,23 @@ let anyType: any;
 let anyTypeOfArray: any[];
 
 let anyTypeOfObject: {
-    name: any,
-    age: any,
-}
-
+  name: any;
+  age: any;
+};
 
 let myFunction: Function;
 myFunction = () => {
-    console.log('rahan')
-}
-const myFunc = (a: string, b:string) => {
-    console.log(`Hello ${a} ${b}`)
-}
+  console.log("rahan");
+};
+const myFunc = (a: string, b: string) => {
+  console.log(`Hello ${a} ${b}`);
+};
 
-myFunc('raihan', 'uddin')
+myFunc("raihan", "uddin");
 
 const myOptionValueFunction = (c?: string) => {
-    console.log('hello world')
-}
-
+  console.log("hello world");
+};
 
 // Type Aliases
 type stringOrNum = string | number;
@@ -54,46 +52,72 @@ const sayHello = (user: usertype) => {
   console.log(`Hello ${user.age > 50 ? "Sir" : "Mir"} ${user.name}`);
 };
 
-
-// Function Signatures 
+// Function Signatures
 let signatures: (x: string, y: string) => void;
 let add: (x: number, y: number) => number;
 
-add = (a:number, b:number) => {
-    return a + b;
-}
+add = (a: number, b: number) => {
+  return a + b;
+};
 
 let calculation: (x: number, y: number, z: string) => number;
 calculation = (a: number, b: number, c: string) => {
-    if (c === 'add') {
-        return a + b;
-    } else {
-        return a - b;
-    }
-}
-
-
+  if (c === "add") {
+    return a + b;
+  } else {
+    return a - b;
+  }
+};
 
 // classes
 
 class Players {
-    name: string;
-    age: number;
-    country: string;
+  name: string;
+  age: number;
+  country: string;
 
-    constructor(n: string, a: number, c: string) {
-        this.name= n;
-        this.age= a;
-        this.country= c;
-    }
+  constructor(n: string, a: number, c: string) {
+    this.name = n;
+    this.age = a;
+    this.country = c;
+  }
 
-    play() {
-        console.log(`${this.name} from ${this.country} is playing`)
-    }
+  play() {
+    console.log(`${this.name} from ${this.country} is playing`);
+  }
 }
 
-const mashrafi = new Players('Mashrafi', 40, 'bangladesh');
+const mashrafi = new Players("Mashrafi", 40, "bangladesh");
 const players: Players[] = [];
 
 players.push(mashrafi);
 
+
+
+
+// access modifiers
+class Cricket {
+  //   public name: string;
+  //   private age: number;
+  //   readonly country: string;
+
+  //   constructor(n: string, a: number, c: string) {
+  //     this.name = n;
+  //     this.age = a;
+  //     this.country = c;
+  //   }
+  constructor(
+    public name: string,
+    private age: number,
+    readonly country: string
+  ) {}
+
+  play() {
+    console.log(`${this.name} from ${this.country} is playing`);
+  }
+}
+
+const Topmashrafi = new Cricket("Mashrafi", 40, "bangladesh");
+const cricket: Cricket[] = [];
+
+cricket.push(Topmashrafi);
