@@ -19,3 +19,15 @@ myFunc('raihan', 'uddin');
 const myOptionValueFunction = (c) => {
     console.log('hello world');
 };
+// const userDetails = (id: string | number, user: { name: string; age: number }) => {
+//     console.log(`Use id is ${id}, name is ${user.name} and age is ${user.age}`)
+// };
+const userDetails = (id, user) => {
+    console.log(`Use id is ${id}, name is ${user.name} and age is ${user.age}`);
+};
+// const sayHello = (user: { name: string; age: number }) => {
+//     console.log(`Hello ${user.age > 50 ? "Sir" : "Mir"} ${user.name}`)
+// }
+const sayHello = (user) => {
+    console.log(`Hello ${user.age > 50 ? "Sir" : "Mir"} ${user.name}`);
+};

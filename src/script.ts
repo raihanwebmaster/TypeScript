@@ -37,6 +37,24 @@ const myOptionValueFunction = (c?: string) => {
 }
 
 
+// Type Aliases
+type stringOrNum = string | number;
+type usertype = { name: string; age: number };
+
+// const userDetails = (id: string | number, user: { name: string; age: number }) => {
+//     console.log(`Use id is ${id}, name is ${user.name} and age is ${user.age}`)
+// };
+const userDetails = (id: stringOrNum, user: usertype) => {
+  console.log(`Use id is ${id}, name is ${user.name} and age is ${user.age}`);
+};
+// const sayHello = (user: { name: string; age: number }) => {
+//     console.log(`Hello ${user.age > 50 ? "Sir" : "Mir"} ${user.name}`)
+// }
+const sayHello = (user: usertype) => {
+  console.log(`Hello ${user.age > 50 ? "Sir" : "Mir"} ${user.name}`);
+};
+
+
 
 
 
