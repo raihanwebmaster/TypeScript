@@ -200,4 +200,25 @@ const reponse1: APIResponse<object> = {
 
 
 
+// ENUM Types
+enum ResponseType { SUCCESS, FAILURE, UNAUTHENTICATED, FORBIDDEN };
+
+interface APIResponse2<T> {
+  status: number;
+  type: ResponseType;
+  data: T;
+}
+
+const reponse2: APIResponse2<object> = {
+  status: 200,
+  type: ResponseType.FAILURE,
+  data: {
+    name: "raihan",
+    something: 300,
+  },
+};
+
+
+
+
 

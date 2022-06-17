@@ -115,7 +115,6 @@ const reponse1 = {
         something: 300,
     }
 };
-export {};
 // const reponse02: APIResponse = {
 //   status: 200,
 //   type: "good",
@@ -124,3 +123,21 @@ export {};
 //     something: 300,
 //   },
 // };
+// ENUM Types
+var ResponseType;
+(function (ResponseType) {
+    ResponseType[ResponseType["SUCCESS"] = 0] = "SUCCESS";
+    ResponseType[ResponseType["FAILURE"] = 1] = "FAILURE";
+    ResponseType[ResponseType["UNAUTHENTICATED"] = 2] = "UNAUTHENTICATED";
+    ResponseType[ResponseType["FORBIDDEN"] = 3] = "FORBIDDEN";
+})(ResponseType || (ResponseType = {}));
+;
+const reponse2 = {
+    status: 200,
+    type: ResponseType.FAILURE,
+    data: {
+        name: "raihan",
+        something: 300,
+    },
+};
+export {};
