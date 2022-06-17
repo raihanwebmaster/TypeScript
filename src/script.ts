@@ -158,3 +158,46 @@ hola = new Players("Mashrafi", 40, "bangladesh");
 
 
 
+
+//GENERICS
+
+const addID = <T extends object>(obj: T) => {
+  let id = Math.floor(Math.random() * 100)
+  return { ...obj, id };
+}
+
+let user = addID({
+  name: "raihan",
+  age: 24,
+})
+
+user.age;
+
+
+interface APIResponse<T> {
+  status: number;
+  type: string;
+  data: T;
+}
+
+const reponse1: APIResponse<object> = {
+  status: 200,
+  type: 'good',
+  data: {
+    name: 'raihan',
+    something: 300,
+  }
+}
+
+// const reponse02: APIResponse = {
+//   status: 200,
+//   type: "good",
+//   data: {
+//     name: "raihan",
+//     something: 300,
+//   },
+// };
+
+
+
+

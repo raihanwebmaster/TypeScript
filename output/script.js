@@ -97,4 +97,30 @@ let threeDdoptions = {
 drawRectangle(threeDdoptions);
 let hola;
 hola = new Players("Mashrafi", 40, "bangladesh");
+//GENERICS
+const addID = (obj) => {
+    let id = Math.floor(Math.random() * 100);
+    return Object.assign(Object.assign({}, obj), { id });
+};
+let user = addID({
+    name: "raihan",
+    age: 24,
+});
+user.age;
+const reponse1 = {
+    status: 200,
+    type: 'good',
+    data: {
+        name: 'raihan',
+        something: 300,
+    }
+};
 export {};
+// const reponse02: APIResponse = {
+//   status: 200,
+//   type: "good",
+//   data: {
+//     name: "raihan",
+//     something: 300,
+//   },
+// };
