@@ -92,9 +92,6 @@ const players: Players[] = [];
 
 players.push(mashrafi);
 
-
-
-
 // access modifiers
 class Cricket {
   //   public name: string;
@@ -123,4 +120,41 @@ const cricket: Cricket[] = [];
 cricket.push(Topmashrafi);
 
 //Module System
-import {Player} from './classes/Player.js'
+import { Player } from "./classes/Player.js";
+
+
+//interfaces object
+interface RectangleOptions {
+  width: number;
+  length: number;
+}
+
+function drawRectangle(options: RectangleOptions) {
+  let width = options.width;
+  let length = options.length;
+}
+
+drawRectangle({
+  width: 30,
+  length: 40,
+});
+
+let threeDdoptions = {
+  width: 30,
+  length: 40,
+  height: 10,
+}
+
+drawRectangle(threeDdoptions);
+
+
+// interfaces classes
+
+import { IsPlayer } from "./interfaces/IsPlayer.js";
+let hola: IsPlayer;
+
+hola = new Players("Mashrafi", 40, "bangladesh");
+
+
+
+

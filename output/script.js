@@ -81,4 +81,20 @@ class Cricket {
 const Topmashrafi = new Cricket("Mashrafi", 40, "bangladesh");
 const cricket = [];
 cricket.push(Topmashrafi);
+function drawRectangle(options) {
+    let width = options.width;
+    let length = options.length;
+}
+drawRectangle({
+    width: 30,
+    length: 40,
+});
+let threeDdoptions = {
+    width: 30,
+    length: 40,
+    height: 10,
+};
+drawRectangle(threeDdoptions);
+let hola;
+hola = new Players("Mashrafi", 40, "bangladesh");
 export {};
