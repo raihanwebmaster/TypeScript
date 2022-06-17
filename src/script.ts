@@ -220,5 +220,13 @@ const reponse2: APIResponse2<object> = {
 
 
 
+// Tuples
+
+
+let tuples = [3, 'hello', { p: 3 }];
+let tuplesType: [number, string, object] = [4, 'world', {p: 1}];
+
+
+
 
 

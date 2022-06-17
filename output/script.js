@@ -140,4 +140,7 @@ const reponse2 = {
         something: 300,
     },
 };
+// Tuples
+let tuples = [3, 'hello', { p: 3 }];
+let tuplesType = [4, 'world', { p: 1 }];
 export {};
